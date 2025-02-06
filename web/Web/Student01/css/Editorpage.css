@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    background-size: cover;
+}
+
+h1 {
+    color: #bcc6cf;
+    padding: 20px;
+    margin-bottom: 5vh;
+    font-size: 36px;
+}
+
+.editor-container {
+    width: 50%;
+    margin: 5vh auto;
+    background-color: #0a0a0a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    background-color: #5e8ab1;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+.editor-content {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.editor-content a {
+    color: #7099b5;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.editor-content a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    background-color: rgb(147, 166, 199);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.section p {
+    margin: 10px 0 0;
+    color: #434e4e;
+    font-size: 14px;
+}
+
+.section .button {
+    color: darkblue;
+}
+
+@media (max-width: 768px) {
+    .editor-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .editor-header {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .editor-content a {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .section h3 {
+        font-size: 18px;
+        color: darkblue;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}

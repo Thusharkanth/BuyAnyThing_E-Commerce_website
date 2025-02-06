@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="/student4/review/review.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png"  class="logo" alt="BuyAnything.com Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html" class="button">Home</a></li>
+                <li><a href="shop.html" class="button">Shop</a></li>
+                <li><a href="about.html" class="button">About Us</a></li>
+                <li><a href="login.html" class="button">Login</a></li>
+                <li><a href="query.html" class="button">Query</a></li>
+                <li><a href="review.html" class="button">Review</a></li>
+                <li><a href="quiz.html" class="button">Quiz</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart" style="color: #74C0FC;"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="title">
+        <h6>Buy Anything</h6>
+        <h2>Product Reviews</h2>
+    </section>
+
+    
+        <div class="container">
+            <!-- backround change code -->
+     
+            <div class="controls font-alignment  ">
+
+               
+                <label for="background-color">Background Color:</label>
+                <select id="background-color">
+                    <option value="#F5E0E0">Seashell</option>
+                    <option value="#FAFAC5">Light Yellow</option>
+                    <option value="#C5F8FA">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="#F5D6F8">Light Pink</option>
+                </select>
+            </div>
+            <div class="controls font-alignment">
+                <label for="text-color ">Text Color:</label>
+                <select id="text-color">
+                    <option value="black">Black</option>
+                    <option value="blue"> Blue</option>
+                    <option value="green"> Green</option>
+                    <option value="red"> Red</option>
+                    <option value="darkorange"> Orange</option>
+                </select>
+            </div>
+
+            <div class="listing">
+                    
+        <div class="wrapper">
+
+            
+                <!-- review form-->
+                <div class="col-1-of-2">
+
+                <section id="review-form">
+                    <section class="subscribtion">
+
+                        <h1>Customer Review Form</h1>
+                        <h5>We value your feedback. Please take a moment to review your experince with us</h5>
+                
+                        <input type="text" name="Name" placeholder="Your Name " id="review-form-name">
+                        <input type="email" name="email" placeholder="Your Email" id="review-form-email" >
+                        <input type="text" name="number" placeholder="Your Phone Number" id="review-form-number">
+                        <p class="text-dis">We migth contact you for further Classification</p>
+                        <div class="star">
+                            <h2>Quality of Service</h2>
+                            <p>Rate the quality of service provided</p>
+                
+                            <div class="star-rating">
+                                <input type="radio" id="5-stars" name="rating" value="5" />
+                                <label for="5-stars" class="star">&#9733;</label>
+                                <input type="radio" id="4-stars" name="rating" value="4" />
+                                <label for="4-stars" class="star">&#9733;</label>
+                                <input type="radio" id="3-stars" name="rating" value="3" />
+                                <label for="3-stars" class="star">&#9733;</label>
+                                <input type="radio" id="2-stars" name="rating" value="2" />
+                                <label for="2-stars" class="star">&#9733;</label>
+                                <input type="radio" id="1-stars" name="rating" value="1" />
+                                <label for="1-stars" class="star">&#9733;</label>
+                            </div>
+                            
+                        </div>
+                        <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+                        <p class="comment-dis">Please provide additional informaation here </p>
+                
+                        <button class="btn" id="submitReviewButton" onclick="validateReviewForm()"><a href="#">Submit Review</a></button>
+
+                        <button class="btn"><a href="/comments.html" target="_blank">SEE REVIEW</a></button>
+                        
+                
+                    </section>
+                </section>
+            </div>
+            
+        </div>
+
+
+            </section>
+
+            <section class="newletter">
+
+                <form id="subscriptionForm"action="">
+                    <fieldset class="field">
+                    
+                    <legend>Subscription</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name"><br><br>
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your Email"><br><br>
+                
+
+                    
+
+                    <div class="subscribe-image">
+                        <img src="/student4/review/subscribeImage.webp" alt="" class="image--size">
+                    </div>
+
+                    <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="reset">
+
+                </div>
+                    </fieldset>
+
+                    
+                
+                </form>
+            </section>
+            <footer>
+                <h2>Follow Us</h2>
+                <div class="socialicons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <div class="footer-columns">
+                    <div class="col">
+                        <img src="logo.png" class="logo">
+                    </div>
+                    <div class="col">
+                        <p><strong>Address</strong><br>302/F,Kinsy Road,Colombo</p>
+                        <p><strong>Phone</strong><br>+94702345612</p>
+                        <p><strong>Opening Hours</strong><br>9am-6pm</p>   
+                    </div>
+                    <div class="col">
+                        <a href="home.html" class="button">Home</a>
+                        <a href="shop.html" class="button">Shop</a>
+                        <a href="about.html" class="button">About Us</a>
+                    </div>
+                </div>
+                <p><strong>© 2024 BuyAnything. All rights reserved.</strong></p>
+                <a href="Thusharkanth.html" class="button">Editor's Page</a>
+            </footer>
+
+
+            </div>
+    </div>
+    </section>
+<script>
+    
+</script>
+
+
+
+<script src="/student4/review/script-BGchange.js"></script>
+<script src="/student4/review/script-Newsletter.js"></script>
+<script src="/student4/review/submitBTN.js"></script>
+
+
+</body>
+</html>

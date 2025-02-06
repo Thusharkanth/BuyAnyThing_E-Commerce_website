@@ -1,0 +1,115 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<customerReviews>
+    <reviews>
+        <name>John Doe</name>
+        <date>2024-07-10</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>This is an amazing product!</comment>
+    </reviews>
+
+    <reviews>
+        <name>Jane Smith</name>
+        <date>2024-07-09</date>
+        <stars>&#9734;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Highly recommend this to everyone.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Charlie Smith</name>
+        <date>2024-07-09</date>
+        <stars>&#9734;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Super product.. with best quality</comment>
+    </reviews>
+
+    <reviews>
+        <name>Emma Davis</name>
+        <date>2024-07-09</date>
+        <stars>&#9734;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Very satisfied with the purchase..</comment>
+    </reviews>
+
+    <reviews>
+        <name>Michael Wilson</name>
+        <date>2024-07-09</date>
+        <stars>&#9734;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>i love your product</comment>
+    </reviews>
+
+    <reviews>
+        <name>Emma Davis</name>
+        <date>2024-07-09</date>
+        <stars>&#9734;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Very satisfied with the purchase.</comment>
+    </reviews>
+
+    <!-- Additional reviews -->
+    <reviews>
+        <name>Oliver Brown</name>
+        <date>2024-07-08</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9734;</stars>
+        <comment>Good value for money.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Ava Johnson</name>
+        <date>2024-07-07</date>
+        <stars>&#9733;&#9733;&#9733;&#9734;&#9734;</stars>
+        <comment>Product is decent for the price.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Lucas Martinez</name>
+        <date>2024-07-06</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9734;</stars>
+        <comment>Very happy with the quality.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Emily Garcia</name>
+        <date>2024-07-05</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9734;</stars>
+        <comment>Works as expected. Satisfied.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Noah Lee</name>
+        <date>2024-07-04</date>
+        <stars>&#9733;&#9733;&#9733;&#9734;&#9734;</stars>
+        <comment>Not bad, could be better.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Sophia Harris</name>
+        <date>2024-07-03</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Exceeded my expectations!</comment>
+    </reviews>
+
+    <reviews>
+        <name>Mason Clark</name>
+        <date>2024-07-02</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Top-notch product and service.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Isabella Rodriguez</name>
+        <date>2024-07-01</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9734;</stars>
+        <comment>Would buy again.</comment>
+    </reviews>
+
+    <reviews>
+        <name>James Lewis</name>
+        <date>2024-06-30</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9734;</stars>
+        <comment>Pretty good overall.</comment>
+    </reviews>
+
+    <reviews>
+        <name>Charlotte Walker</name>
+        <date>2024-06-29</date>
+        <stars>&#9733;&#9733;&#9733;&#9733;&#9733;</stars>
+        <comment>Highly impressed.</comment>
+    </reviews>
+</customerReviews>

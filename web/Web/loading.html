@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <link rel="stylesheet" href="Student01/css/loading.css">
+    <script>
+        function redirectToLogin() {
+            setTimeout(function() {
+                window.location.href = 'login.html';
+            }, 5000);
+        }
+    </script>
+</head>
+<body onload="redirectToLogin()">
+<div class="loading-container">
+    <div class="buffering-circle"></div>
+    <div class="students-details">
+        <div class="student">
+            <h2>Student 1</h2>
+            <p>Name: Vimesh Herath</p>
+            <p>RGU ID: 2409660</p>
+            <p>IIT ID: 20233171</p>
+        </div>
+        <div class="student">
+            <h2>Student 2</h2>
+            <p>Name: Siyumi Jayawardhane</p>
+            <p>RGU ID: 2410215</p>
+            <p>IIT ID:20230261</p>
+        </div>
+        <div class="student">
+            <h2>Student 3</h2>
+            <p>Name: Sithmi De Silva</p>
+            <p>RGU ID:2409664</p>
+            <p>IIT ID:20231045</p>
+        </div>
+        <div class="student">
+            <h2>Student 4</h2>
+            <p>Name: Loganathan Thusharkanth </p>
+            <p>RGU ID:2410213</p>
+            <p>IIT ID:20233168</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

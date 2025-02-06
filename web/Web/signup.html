@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="Student01/css/signup.css">
+</head>
+<body>
+<div class="background-animation"></div>
+
+<form id="signup_form" onsubmit="return validateForm()">
+    <div class="image-container">
+        <img src="Student01/images/logoTitle.png" alt="logo" class="logo">
+    </div>
+    <h2>Signup Form</h2>
+    <section>
+        <h3>Personal Information</h3>
+        <div class="name-group">
+            <div class="name-item">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+            </div>
+            <div class="name-item">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
+        </div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <div class="password-group">
+            <div class="password-item">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="password-item">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+                <div id="password_error_message" class="error_message"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Contact Information</h3>
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="text" id="mobile_number" name="mobile_number">
+        <label for="street_address">Address:</label>
+        <input type="text" id="street_address" name="street_address">
+        <div class="address-group">
+            <div class="address-item">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="address-item">
+                <label for="state_province">Province:</label>
+                <select id="state_province" name="state_province">
+                    <option value="">Select</option>
+                    <option value="wp">Western</option>
+                    <option value="cp">Central</option>
+                    <option value="sp">Southern</option>
+                    <option value="nw">North Western</option>
+                    <option value="sg">Sabaragamuwa</option>
+                    <option value="up">Uva</option>
+                    <option value="np">Northern</option>
+                    <option value="ep">Eastern</option>
+                    <option value="nc">North Central</option>
+                </select>
+            </div>
+        </div>
+        <label for="zip_postal_code">Zip/Postal Code:</label>
+        <input type="text" id="zip_postal_code" name="zip_postal_code">
+    </section>
+    <section>
+        <h3>Additional Information</h3>
+        <div class="additional-info-group">
+            <div class="additional-info-item">
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="additional-info-item">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Terms and Conditions</h3>
+        <input type="checkbox" id="terms_and_conditions" name="terms_and_conditions">
+        <label for="terms_and_conditions">I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> of this website.</label>
+    </section>
+    <div id="form_error_message" class="error_message"></div>
+    <button type="submit" id="submit_button" disabled>Create Account</button>
+</form>
+
+<div id="preferences_popup" class="popup">
+    <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <h3>Tell us about your preferences</h3>
+        <div class="buttons-group">
+            <button class="category-button" data-value="apple">Apple</button>
+            <button class="category-button" data-value="dell">Dell</button>
+            <button class="category-button" data-value="hp">HP</button>
+            <button class="category-button" data-value="lenovo">Lenovo</button>
+            <button class="category-button" data-value="asus">Asus</button>
+            <button class="category-button" data-value="acer">Acer</button>
+            <button class="category-button" data-value="msi">MSI</button>
+        </div>
+        <label for="usage_purpose">What do you use your computer for?</label>
+        <textarea id="usage_purpose" name="usage_purpose" rows="4"></textarea>
+        <button type="submit" id="preferences_submit_button">Submit Preferences</button>
+    </div>
+</div>
+
+<script src="Student01/js/signup.js"></script>
+</body>
+</html>

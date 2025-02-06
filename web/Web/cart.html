@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="student 3/cart/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<section id="header">
+    <a href="#"><img src="logo.png" class="logo" alt="BuyAnything.com Logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="home.html" class="button">Home</a></li>
+            <li><a href="shop.html" class="button">Shop</a></li>
+            <li><a href="#" class="button" id="quizButton">Quiz</a></li>
+            <li><a href="query.html" class="button">Query</a></li>
+            <li><a href="review.html" class="button">Review</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart" style="color: #74C0FC;"></i></a></li>
+        </ul>
+    </div>
+</section><br>
+
+<button id="startQuizButton">Take the Quiz</button>
+
+<!-- Quiz Section -->
+<div id="quiz-section" style="display: none;">
+    <h2>Take the Quiz</h2>
+    <div id="quiz-container"></div>
+    <button id="submitQuizButton">Submit Quiz</button>
+    <div id="quizResult"></div>
+</div>
+
+<div id="cart-container">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <div class="subtotal">
+        <span>Subtotal:</span>
+        <span id="subtotal-price">Rs. 0</span>
+    </div>
+    <div class="discount-info">
+        <span>Quiz Points:</span>
+        <span id="quiz-points">0</span>
+        <span>Discount Applied:</span>
+        <span id="discount-amount">Rs. 0</span>
+    </div>
+    <button id="back-to-shop-button">Back to Shop</button>
+    <button id="checkout-button">Check Out</button>
+</div>
+
+<!-- Modal for Checkout Form -->
+<div id="checkoutModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <div id="error-messages" style="display: none; color: red;"></div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+
+            <button type="button" id="submit-button">Place Order</button>
+        </form>
+    </div>
+</div>
+<!-- End of Modal -->
+
+<footer>
+    <h2>Follow Us</h2>
+    <div class="socialicons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+    <div class="footer-columns">
+        <div class="col">
+            <img src="logo.png" class="logo">
+        </div>
+        <div class="col">
+            <p><strong>Address</strong><br>302/F, Kinsy Road, Colombo</p>
+            <p><strong>Phone</strong><br>+94702345612</p>
+            <p><strong>Opening Hours</strong><br>9am-6pm</p>
+        </div>
+        <div class="col">
+            <a href="home.html" class="button">Home</a>
+            <a href="shop.html" class="button">Shop</a>
+            <a href="about.html" class="button">About Us</a>
+        </div>
+    </div>
+    <p><strong>© 2024 BuyAnything. All rights reserved.</strong></p>
+    <a href="sithmi.html" class="button">Editor's Page[Cart]</a>
+    <a href="siyumi.html" class="button">Editor's Page[Quiz]</a>
+</footer>
+
+<script src="student 3/cart/cart.js"></script>
+</body>
+</html>

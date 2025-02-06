@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="student 2/QueryForm/query.png" type="image/x-icon">
+    <title>Query</title>
+    <link rel="stylesheet" href="student 2/QueryForm/query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<section id="header">
+    <a href="#"><img src="logo.png" class="logo" alt="BuyAnything.com Logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="home.html" class="button">Home</a></li>
+            <li><a href="shop.html" class="button">Shop</a></li>
+            <li><a href="about.html" class="button">About Us</a></li>
+            <li><a href="login.html" class="button">Login</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart" style="color: #74C0FC;"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+<div class="container">
+    <form onsubmit="return validateForm()">
+        <i class="fas fa-user" style="--fa-primary-color: #56a8e6; --fa-secondary-color: #56a8e6;"><br></i>
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" id="name" onkeyup="validateName()">
+            <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" id="email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Phone No.</label>
+            <input type="tel" placeholder="123 456 7890" id="contact" onkeyup="validateContact()">
+            <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Subject</label>
+            <textarea rows="1" placeholder="Enter Subject" id="subject" onkeyup="validateSubject()"></textarea>
+            <span id="subject-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Details</label>
+            <textarea rows="2" placeholder="Enter Details" id="details" onkeyup="validateDetails()"></textarea>
+            <span id="details-error"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+</div>
+
+<!-- Success Modal -->
+<div id="success-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="success-message">Form submitted successfully!</p>
+    </div>
+</div>
+
+<footer>
+    <h2>Follow Us</h2>
+    <div class="socialicons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+    <div class="footer-columns">
+        <div class="col">
+            <img src="logo.png" class="logo">
+        </div>
+        <div class="col">
+            <p><strong>Address</strong><br>302/F, Kinsy Road, Colombo</p>
+            <p><strong>Phone</strong><br>+94702345612</p>
+            <p><strong>Opening Hours</strong><br>9am-6pm</p>
+        </div>
+        <div class="col">
+            <a href="home.html" class="button">Home</a>
+            <a href="shop.html" class="button">Shop</a>
+            <a href="about.html" class="button">About Us</a>
+        </div>
+    </div>
+    <p><strong>© 2024 BuyAnything. All rights reserved.</strong></p>
+    <a href="siyumi.html" class="button">Editor's Page</a>
+</footer>
+
+<script src="student 2/QueryForm/query.js"></script>
+</body>
+</html>

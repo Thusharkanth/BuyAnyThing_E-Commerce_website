@@ -1,0 +1,59 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    margin-top: 20px;
+}
+
+.loading-container {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Adjusted width to be responsive */
+    max-width: 600px; /* Maximum width to prevent the form from becoming too wide */
+}
+
+.buffering-circle {
+    margin: 20px auto;
+    border: 16px solid #333; /* Dark background for the circle */
+    border-radius: 50%;
+    border-top: 16px solid #fff; /* White color for the spinning part */
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.students-details {
+    margin-top: 20px;
+}
+
+.student {
+    margin-bottom: 20px; /* Increased gap between student details */
+}
+
+.student h2, .student p {
+    color: white; /* White font color */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Relative font size */
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

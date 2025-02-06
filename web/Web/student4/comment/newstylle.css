@@ -1,0 +1,99 @@
+body{
+    background-color: aliceblue;
+    
+    
+}
+
+#viewers-review {
+    display: inline;
+    transform: translateY(-20rem);
+}
+
+.review-container {
+    
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-right: 0%;
+    margin-left: 550px;
+}
+
+/* Individual review styling */
+.review {
+    background-color:aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+/* Review title (name) styling in blue */
+.review h2 {
+    font-size: 1.5em;
+    color: #007BFF; /* Blue color */
+    margin-bottom: 10px;
+}
+
+/* Review date styling */
+.review p:nth-child(2) {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Review stars styling in gold */
+.review p:nth-child(3) {
+    font-size: 1.2em;
+    color: #ffb400; /* Gold color */
+    margin-bottom: 10px;
+}
+
+/* Review comment styling */
+.review p:nth-child(4) {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Arrow container styling */
+.arrow-container {
+    text-align: center;
+    margin-top: 20px;
+    display: inline;
+    margin-right: 00px;
+    padding-top: 20px;
+}
+
+#next-arrow {
+    padding: 10px 20px;
+    background: rgb(255, 166, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-right: 90%;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+    width: 240px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 750px;
+}
+
+#next-arrow:hover {
+    background-color: #e5e7eb;
+    text-decoration: none;
+}

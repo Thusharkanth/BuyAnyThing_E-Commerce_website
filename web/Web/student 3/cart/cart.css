@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: beige;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #45c3e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 65px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0E2034;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: rgb(115, 119, 119);
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.pro img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cart-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cartItems li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#cartItems img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#cartItems span {
+    margin-right: 10px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button#checkout-button {
+    background-color: green;
+}
+
+button#back-button {
+    background-color: grey;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.socialicons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 50px;
+    size: 30px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 250px;
+}
+
+footer .logo {
+    width: 50%;
+    height: auto;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Increased top margin for better centering */
+    padding: 15px; /* Reduced padding */
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 350px; /* Adjusted maximum width for a smaller form */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: rgb(95, 5, 5);
+    text-decoration: none;
+}
+
+/* Form styles inside modal */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced space between form elements */
+}
+
+label {
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width for better layout */
+    box-sizing: border-box;
+    font-size: 14px; /* Adjusted font size */
+}
+
+button[type="button"] {
+    background-color: green;
+    color: white;
+    font-size: 16px; /* Adjusted font size */
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: darkgreen;
+}
+
+.total {
+    margin-top: 15px; /* Reduced top margin */
+    padding: 10px; /* Reduced padding */
+    border-top: 1px solid #ddd;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: bold;
+    text-align: right;
+}

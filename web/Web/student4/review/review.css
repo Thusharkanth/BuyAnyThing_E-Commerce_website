@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Header section*/
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    background-color:#F5E0E0;
+    
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:#4FC3F7 ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px ;
+    background-color:black  ;
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 100000;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li{
+ list-style: none;
+ padding: 0 20px;   
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0E2034;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color:rgb(115, 119, 119);
+}
+
+
+/*_____________________________________________________________________________________________________________________*/
+
+.title{
+
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans';
+    background-color: aliceblue;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*java script part to change background*/
+
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.44);
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.listing {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+}
+
+.font-alignment {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*viewrs review/comment and review form main part*/
+.col-1-of-2 {
+    width: calc((100% ) / 2);
+    display: table-cell;
+}
+
+    .review-info{
+        width: 100%;
+        margin: 20px auto;
+        background-color: #ffffff00;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+    }
+
+
+
+/*CSS FOR STAR RATING -- review inside the div ... name of the reviewer, picture, stars ect...*/
+
+            .review {
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                border: 1px solid #e0e0e0;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .review-header {
+                margin-left: 15px;
+                color: #333;
+            }
+
+            .review-name {
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            .review-date {
+                font-size: 0.9em;
+                color: #777;
+                margin-top: 5px;
+            }
+
+            .star-rating {
+                margin-top: 5px;
+                color: #f39c12;
+            }
+
+            .review-body {
+                margin-top: 10px;
+                color: #555;
+                padding:20px;
+            }
+
+            .review img {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            }
+
+
+            hr {
+                border: 0;
+                border-top: 1px solid #eee;
+                margin: 10px 0;
+            }
+
+        /*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+        /*review form*/
+
+   
+
+        #review-form{
+            display: inline;
+            
+        }
+                 .field {
+                    height: 35rem;
+                 }
+                .subscribtion{
+                    width: 80%;
+                    margin: 20px auto;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    background-color: rgba(240, 248, 255, 0.437);
+                    text-align: center;
+                    display: inline-block;
+                    margin-left: 65%;
+
+                }
+
+                    .subscribtion h1{
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-top: 20px;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+
+                    .subscribtion h5{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-size: 15px;
+                    }
+
+                    .subscribtion input{
+                        margin: 5px;
+                        width: 80%;
+                        height: 30px;
+                        background: transparent;
+                        color: black;
+                        letter-spacing: 1px;
+                        font-family: sans-serif;
+                        border: 1px soild gray ;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+
+                    }
+
+                    .subscribtion input:focus{
+                        outline: none;
+                    }
+
+                    .subscribtion p{
+                        margin-top: 5px;
+                        color: rgba(49, 49, 49, 0.69);
+                        font-size: 14px;
+                        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        
+                    }
+
+                    .subscribtion .text-dis{
+                        margin-right: 40px;
+                    }
+
+                    .star h2{
+                        margin-top: 20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    #comment{
+                        margin: 10px 0px 0px;
+                        width:200px;
+                        height: 101px;
+                    }
+
+                    .comment-dis{
+                        padding-top: 1px;
+                        margin-right: 70px;
+                        position: relative;
+                        left: 2rem;
+                    }
+
+
+
+                    /* Star ratting pattern for review page*/
+
+
+                            .star-rating {
+                                direction: rtl;
+                                display: inline-flex;
+                            }
+
+                            .star-rating input {
+                                display: none;
+                            }
+
+                            .star-rating label {
+                                font-size: 2rem;
+                                color: #ddd;
+                                cursor: pointer;
+                                padding: 0 5px;
+                            }
+
+                            .star-rating input:checked ~ label,
+                            .star-rating input:hover ~ label,
+                            .star-rating label:hover,
+                            .star-rating label:hover ~ label {
+                                color: gold;
+                            }
+
+                        /*Submit Review Button*/
+
+                            .btn{
+                                width: 240px;
+                                height: 40px;
+                                background: rgb(255, 166, 0);
+                                border: none;
+                                margin-top: 30px;
+                                font-size: 18px;
+                                border-radius: 10px;
+                                cursor: pointer;
+                                transition: 1s ease;
+                            }
+                            .btn:hover{
+                                background: white;
+                                color: orange;
+                            }
+
+                            .btn a{
+                                text-decoration: none;
+                                color: black;
+                                font-weight: bold;
+                            }
+
+                            .image--size {
+                                width: 25rem;
+                                height: 25rem;
+                                position: relative;
+                                z-index: 100;
+                                left: 40rem;
+                                bottom: 15rem;
+                            }
+
+                            .buttons {
+                                position: relative;
+                                bottom: 10rem;
+                            }
+                          
+                        
+
+        /*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*newleterr form(Subscribe part)*/
+
+        .newletter form{
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(240, 248, 255, 0.368);
+            text-align: left;
+            padding: 20px;
+        }
+
+        .newletter legend{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 5px;
+            
+        }
+
+        .newletter label{
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial;
+
+
+        }
+
+
+        .newletter [for=email]{
+            padding-right: 20px;
+            margin-right: 30px;
+        }
+        
+         #email , #fname , #lname{
+
+            width: 300px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid orange;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: none;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif; 
+            display: inline;
+        }
+        ::placeholder{
+            color: black;
+            font-family: Arial;
+        }
+
+        .newletter [type=submit]{
+                width: 140px;
+                height: 40px;
+                background: rgb(255, 166, 0);
+                border: none;
+                margin-top: 30px;
+                font-size: 18px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 1s ease;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                justify-content: center;
+                display: inline;
+                margin-bottom: 20px;
+                margin-left: 0px;
+                margin-right: 100px;
+            
+        }
+
+        .newletter [type=submit]:hover{
+            background: white;
+            color: orange;
+        }
+
+
+        
+        .newletter [type=reset]{
+            width: 140px;
+            height: 40px;
+            background: rgb(255, 166, 0);
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s ease;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            
+            
+        
+    }
+
+    .newletter [type=reset]:hover{
+        background: white;
+        color: orange;
+    }
+            
+    .subscribe-image{
+        display: flex;
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe-image img{
+        max-width: 600px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 40px;
+        margin-bottom: 80px;
+        
+    }
+
+    .newletter div{
+        display: inline;
+    }
+        
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Footer section */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            width: 100%;
+        }
+
+        footer .h2{
+            display: flex;
+        }
+
+        .socialicons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 50px;
+            size: 30px;
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 250px;
+        }
+
+        footer .logo{
+            width: 50%;
+            height: auto;
+        }
+
+        footer .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+

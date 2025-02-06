@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    position: relative;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(33, 147, 176, 0.7), rgba(109, 213, 237, 0.7));
+    z-index: -1;
+    animation: gradientAnimation 15s infinite;
+}
+
+
+form {
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+form:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 90px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+section {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+a {
+    color: #2193b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #176687;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    transform: scale(1.05);
+}
+
+input:focus,
+select:focus {
+    border-color: #2193b0;
+    outline: none;
+    box-shadow: 0 0 8px rgba(33, 147, 176, 0.3);
+}
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.error {
+    border-color: red;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px 30px;
+    }
+}
+
+/* Popup CSS */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.category-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #2193b0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2193b0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-button.selected {
+    background-color: #2193b0;
+    color: #fff;
+}
